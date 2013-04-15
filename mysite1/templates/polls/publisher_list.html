@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Publishers</h2>
+    <ul>
+        {% for publisher in object_list %}
+            <li>{{ publisher.name }},{{ publisher.address}},{{ publisher.city }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

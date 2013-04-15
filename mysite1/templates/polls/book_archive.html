@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bootstrap Demo</title>
+    <script src="js/jquery1.83.js" > </script>
+    <script src="http://files.cnblogs.com/rubylouvre/bootstrap-dropdown.js"></script>
+     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="row">
+    <div class="span12">
+        <ul class="breadcrumb">
+            <li><a href="#">博客</a> <span class="divider">/</span></li>
+            <li><a href="#">系列文章</a> <span class="divider">/</span></li>
+            <li class="active"></li>
+        </ul>
+        </div>
+ </div>
+
+<div class="row">
+    <div class="span3 well pricehover">
+        <h6>推荐书籍</h6>
+        <ul>
+            <li><a href="#">the django book</a> <span class="divider">/</span></li>
+            <li><a href="#">django 实战</a> <span class="divider">/</span></li>
+        </ul>
+        <h6>书籍作者</h6>
+        <ul>
+            <li><a href="#">哈利波特</a> <span class="divider">/</span></li>
+            <li><a href="#">莫言</a> <span class="divider">/</span></li>
+        </ul>
+        <h6>网络赚钱</h6>
+        <ul>
+            <li><a href="#">如何通过网络赚钱</a> <span class="divider">/</span></li>
+        </ul>
+        <h6>视频教程</h6>
+        <ul>
+            <li><a href="#">ORACLE从入门到精通</a> <span class="divider">/</span></li>
+            <li><a href="#">PHP100视频</a> <span class="divider">/</span></li>
+            <li><a href="#">python视频教程</a> <span class="divider">/</span></li>
+        </ul>
+        <h6>wordpress二次开发</h6>
+        <ul>
+            <li><a href="#">wordpress函数大全</a> <span class="divider">/</span></li>
+            <li><a href="#">主题</a> <span class="divider">/</span></li>
+            <li><a href="#">常用技巧</a> <span class="divider">/</span></li>
+        </ul>
+        <h6>项目管理</h6>
+        <ul>
+            <li><a href="#">生命周期管理</a> <span class="divider">/</span></li>
+            <li><a href="#">项目成本与绩效管理</a> <span class="divider">/</span></li>
+            <li><a href="#">沟通技巧</a> <span class="divider">/</span></li>
+        </ul>
+    </div>
+
+    <div class="span8 well pricehover">
+        <div class="subnav">
+            <ul class="nav nav-pills">
+                <li><a href="#">python</a></li>
+                <li><a href="#">django</a></li>
+                <li><a href="#">oracle</a></li>
+                <li><a href="#">linux</a></li>
+                <li><a href="#">php</a></li>
+                <li><a href="#">nagios</a></li>
+            </ul>
+        </div>
+     <div>
+
+     <div class="span7 well pricehover">
+        
+             <h1>book Detail</h1>
+             <ul>
+                 {% for book in book %}
+                     <li>{{ book.title }},{{ book.book_list}}</li>
+                 {% endfor %}
+             </ul>
+        
+
+      </div>
+
+         
+
+
+    </div>
+<body>
+</html>
